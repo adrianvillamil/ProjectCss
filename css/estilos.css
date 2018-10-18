@@ -1,0 +1,116 @@
+body {
+    background-color: #02010a;
+    font-family: DancingScript;
+}
+
+@font-face {
+    font-family: DancingScript;
+    src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+.contenido {
+    width: 100%;
+}
+
+.cabezera {
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.cabezera header h1, .cabezera nav a {
+    color: white;
+}
+
+.cabezera nav #inicio {
+    text-decoration-line: none;
+}
+
+.cabezera header h1 {
+    text-shadow: 2px 2px #02010a;
+}
+
+.imagen-central {
+    margin: auto;
+    background-color:  #82c3a6;
+    display: inline-flex;
+}
+
+.imagen-secundaria {
+    background-color:  #d5c75f;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+#paisajes img {
+    transition: transform 1s, box-shadow 1s;
+}
+
+#paisajes img:hover {
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+#retratos img {
+    transition: transform 1s, box-shadow 1s;
+}
+
+#retratos img:hover {
+    transform: translate(20px,-5px);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+figure img {
+    width: 100%;
+    box-shadow: 2px 2px #02010a;
+}
+
+figcaption {
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #C6d5c5;
+    padding-left: 6%;
+    font-weight: bold;
+}
+
+@media (min-width: 900px) {
+    .contenido {
+        width: 900px;
+        margin: auto;
+    }
+
+    .imagen-secundaria {
+        flex-direction: row;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    .cabezera {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .cabezera header {
+        margin-left: 4%;
+    }
+
+    .cabezera nav {
+        margin-right: 4%;
+    }
+}
